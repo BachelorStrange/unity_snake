@@ -97,6 +97,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6981821d2dd73046beb05d29e52c7b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snake_extension: {fileID: 0}
+  directions: []
+  saved_points: []
+  saved_directions: []
+  snake_extension_list: []
+  gameManager: {fileID: 0}
 --- !u!61 &6183987398230589408
 BoxCollider2D:
   m_ObjectHideFlags: 0

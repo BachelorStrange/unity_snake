@@ -2,8 +2,9 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Control
-    - apple_spawn
+    - GameManager
     - applecollision
+    - head_collision
     - playgroundcol
     - points_text
     Unity.2D.Animation.Editor.dll:
@@ -39,7 +40,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/AppleWorm.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -60,8 +61,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
-    - Class: 68
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -77,31 +76,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1992}
     - Class: 114
-      Script: {instanceID: 2020}
+      Script: {instanceID: 2064}
     - Class: 114
-      Script: {instanceID: 2066}
+      Script: {instanceID: 2280}
     - Class: 114
-      Script: {instanceID: 2282}
+      Script: {instanceID: 2724}
     - Class: 114
-      Script: {instanceID: 2726}
+      Script: {instanceID: 2876}
     - Class: 114
-      Script: {instanceID: 2878}
+      Script: {instanceID: 2898}
     - Class: 114
-      Script: {instanceID: 2900}
+      Script: {instanceID: 2948}
     - Class: 114
-      Script: {instanceID: 2950}
+      Script: {instanceID: 3134}
     - Class: 114
-      Script: {instanceID: 3136}
+      Script: {instanceID: 3384}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 3508}
     - Class: 114
-      Script: {instanceID: 3510}
+      Script: {instanceID: 4130}
     - Class: 114
       Script: {instanceID: 4864}
     - Class: 114
       Script: {instanceID: 4926}
     - Class: 114
       Script: {instanceID: 5328}
+    - Class: 114
+      Script: {instanceID: 5404}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -201,19 +202,13 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: a852e0757d8347140e27547be2f0bede
+      Hash: 6c14e5a2cdee9baabe01327027b88379
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: playgroundcol
   - hash:
       serializedVersion: 2
-      Hash: b411bc026cdafc96c1396fd0936eadc2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: apple_spawn
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 6c14e5a2cdee9baabe01327027b88379
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: applecollision
@@ -279,7 +274,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: c47ebf58fb4a431bf546dd705d00adff
+      Hash: 3b1c3ca3c999b8b93a7125ec81bc1b3a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: points_text
@@ -477,6 +472,12 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
+      Hash: cd6272d53a27fc767db40c6ee8a30eae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -573,7 +574,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 7a98c1e37524c7722472cb1ed8b35d5f
+      Hash: c7209cc52b005b90351bb4217737a27e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Control
@@ -633,6 +634,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 6c14e5a2cdee9baabe01327027b88379
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: head_collision
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
@@ -669,5 +676,5 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: D:/source/repos/unity_snake/snake/snake.exe
+  - Assets/Scenes/AppleWorm.unity
+  playerPath: D:/source/repos/unity_snake/Winbuild/Apple&Worm.exe

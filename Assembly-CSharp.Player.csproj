@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6FC95FA2-E41B-A55E-8E21-614D502CDB9D}</ProjectGuid>
+    <ProjectGuid>{A76CF9CE-B664-148C-AEA1-AA22FF57002B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,12 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\playgroundcol.cs" />
-    <Compile Include="Assets\apple_spawn.cs" />
-    <Compile Include="Assets\applecollision.cs" />
-    <Compile Include="Assets\points_text.cs" />
-    <Compile Include="Assets\Control.cs" />
-    <Compile Include="Assets\head_collision.cs" />
+    <Compile Include="Assets\Scripts\playgroundcol.cs" />
+    <Compile Include="Assets\Scripts\applecollision.cs" />
+    <Compile Include="Assets\Scripts\points_text.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Control.cs" />
+    <Compile Include="Assets\Scripts\head_collision.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -720,7 +720,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{FA7D25C4-A3A8-122F-0071-830EE5135908}</Project>
+      <Project>{8B234157-E423-BBAE-A3E5-0A619B5A1222}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D573C2F2-E29B-BBE7-6383-ADB02D05362B}</ProjectGuid>
+    <ProjectGuid>{5985AE0D-2AD6-C2A9-0C4B-F647463B1FD7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.Tilemap.Editor</AssemblyName>
@@ -709,11 +709,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{78EAA696-08FB-1049-24C5-81B3FCCC0820}</Project>
+      <Project>{1CA0C738-5032-7F8C-4445-5F1A0AAD591A}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{E70A3548-43E9-D177-BD98-5B10C5CB253D}</Project>
+      <Project>{229A1F30-3135-22F1-2B12-0997CFA609CD}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
