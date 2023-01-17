@@ -64,65 +64,58 @@ public class Control : MonoBehaviour
                 directions.Add(directions[directions.Count - 1]);
             }
 
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                if (directions[0].y != -speed)
-                {
-                    time = 0.0f;
-                    vecspeed.Set(0, speed, 0);
-                    Vector3 pos = new Vector3(snake_extension_list[0].transform.position.x, snake_extension_list[0].transform.position.y, snake_extension_list[0].transform.position.z);
-                    saved_points.Add(pos);
-                    saved_directions.Add(vecspeed);
-                    directions[0] = vecspeed;
-                    sprite.transform.localEulerAngles = new Vector3(0, 0, 90);
-
-                }
-            }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                if (directions[0].x != speed)
-                {
-                    time = 0.0f;
-                    vecspeed.Set(-speed, 0, 0);
-                    Vector3 pos = new Vector3(snake_extension_list[0].transform.position.x, snake_extension_list[0].transform.position.y, snake_extension_list[0].transform.position.z);
-                    saved_points.Add(pos);
-                    saved_directions.Add(vecspeed);
-                    directions[0] = vecspeed;
-                    sprite.transform.localEulerAngles = new Vector3(0, 0, 180);
-                }
-            }
-            else if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                if (directions[0].y != speed)
-                {
-                    time = 0.0f;
-                    vecspeed.Set(0, -speed, 0);
-                    Vector3 pos = new Vector3(snake_extension_list[0].transform.position.x, snake_extension_list[0].transform.position.y, snake_extension_list[0].transform.position.z);
-                    saved_points.Add(pos);
-                    saved_directions.Add(vecspeed);
-                    directions[0] = vecspeed;
-                    sprite.transform.localEulerAngles = new Vector3(0, 0, -90);
-                }
-            }
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                if (directions[0].x != -speed)
-                {
-                    time = 0.0f;
-                    vecspeed.Set(speed, 0, 0);
-                    Vector3 pos = new Vector3(snake_extension_list[0].transform.position.x, snake_extension_list[0].transform.position.y, snake_extension_list[0].transform.position.z);
-                    saved_points.Add(pos);
-                    saved_directions.Add(vecspeed);
-                    directions[0] = vecspeed;
-                    sprite.transform.localEulerAngles = new Vector3(0, 0, 0);
-                }
-
-            }
+            input();
+           
             
         }
         ModifyPositions();
         delete_old_positions();
 
+    }
+
+    private void input()
+    {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            if (directions[0].y != -speed)
+            {
+                updateHead(new Vector3(0, speed, 0), new Vector3(0, 0, 90));
+
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            if (directions[0].x != speed)
+            {
+                updateHead(new Vector3(-speed, 0, 0), new Vector3(0, 0, 180));
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            if (directions[0].y != speed)
+            {
+                updateHead(new Vector3(0, -speed, 0), new Vector3(0, 0, -90));
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            if (directions[0].x != -speed)
+            {
+                updateHead(new Vector3(speed, 0, 0), new Vector3(0, 0, 0));
+            }
+
+        }
+    }
+
+    private void updateHead(Vector3 speed, Vector3 rotation)
+    {
+        time = 0.0f;
+        vecspeed = speed;
+        Vector3 pos = new Vector3(snake_extension_list[0].transform.position.x, snake_extension_list[0].transform.position.y, snake_extension_list[0].transform.position.z);
+        saved_points.Add(pos);
+        saved_directions.Add(vecspeed);
+        directions[0] = vecspeed;
+        sprite.transform.localEulerAngles = rotation;
     }
 
     private void ModifyPositions()
