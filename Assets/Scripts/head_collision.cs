@@ -24,7 +24,6 @@ public class head_collision : MonoBehaviour
     {
         if (collision.tag == "snake")
         {
-            Debug.Log("Head Collision");
             gameManagerScript.gameOver();
         }
 

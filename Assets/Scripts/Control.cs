@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Kopf trennt sich manchmal ab
-//GameOver durch playground, obwohl kopf weit entfernt.
+
 public class Control : MonoBehaviour
 {
     float speed = 15f;
